@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feed | SocialApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">SocialApp</div>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="card post-create">
+            <h3 style="margin-bottom: 1rem; font-size: 1rem;">Share something</h3>
+            <input type="text" id="postTitle" placeholder="Post Title">
+            <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+            <button onclick="createPost()" class="btn-primary">Post Update</button>
+        </section>
+        <div id="postsFeed">
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
